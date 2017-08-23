@@ -1,0 +1,112 @@
+/* Resets --------------------------  */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  color: #989898;
+  font-family: 'Oxygen', helvetica, arial, san-serif;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(61, 146, 201);
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+h3 {
+  font-weight: 100;
+}
+
+/* Fonts --------------------------  */
+@font-face {
+  font-family: 'Biloxi Thin';
+  src: url('/fonts/Biloxi Thin.ttf');  /* IE9 Compat Modes */
+  src: local('Biloxi Thin'),
+       url('/fonts/Biloxi Thin.ttf') format('opentype'); /* IE6-IE8 */
+}
+
+/* Other stylings -------------------------- */
+
+/* Section: Banner */
+.section::before {
+  color: #bdbdbd;
+  content: ".....";
+  font-size: 2em;
+  letter-spacing: 0.4em;
+  margin: 0 auto;
+}
+
+.section__header {
+  color: #bdbdbd;
+  font-family: 'Lobster Two';
+  margin: 1.2em 0 1em 0;
+}
+
+/* Section: Banner */
+.banner__container {
+  background-color: #85bbbd;
+  padding: 5%;
+}
+.banner__header {
+  color: #fff;
+  font: 8.5em 'Biloxi Thin', san-serif;
+  margin: 0;
+}
+.banner__image {
+  width: 60%;
+}
+
+/* Section: Social media */
+.social-media__section::before {
+  content: "";
+}
+.social-media__link {
+  color: #eee;
+  padding: 0 1em;
+  text-decoration: none;
+}
+.social-media__icon {
+  border-radius: 60px;
+  width: 4em;
+}
+.social-media__icon {
+  background-color: #eee;
+}
+
+/* Section: About */
+.about__section {}
+.about__section .band__photo {
+  width: 100%;
+}
+
+/* Media queries -------------------------- */
+
+/* Mobile (portrait) */
+@media (min-width: 320px) and (max-width: 480px) {
+  .banner__header {
+    font-size: 5em;
+  }
+}
+
+/* Tablets (portrait) */
+@media (max-width: 767px) {
+}
+
+/* Tablets (horizontal) */
+@media (max-width: 979px) {
+}
+
+/* Desktop only */
+@media (min-width: 980px) {
+}
+
+@media (min-width: 1200px) {
+}
